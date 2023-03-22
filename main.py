@@ -1,16 +1,16 @@
 
 
-#openai.organization = "org-yl8cj1otp7Fd8e3gapjRf5Gt"
-#openai.api_key = os.getenv("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")
+
 from flask import Flask, render_template, request
 import openai
 import os
 
 app = Flask(__name__)
 
-#openai.api_key = os.getenv("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")
+# --- Enter your API here----below is just an example
+
 openai.api_key = "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"
-model_engine = "text-davinci-003"
+model_engine = "text-davinci-003" # Update model as needed
 
 @app.route('/')
 def index():
